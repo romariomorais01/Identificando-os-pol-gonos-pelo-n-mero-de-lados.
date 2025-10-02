@@ -1,4 +1,6 @@
 "# Identificando-os-pol-gonos-pelo-n-mero-de-lados." 
+
+
 "# Identificando-os-pol-gonos-pelo-n-mero-de-lados." 
 def nome_poligono(lados):
     nomes = {
