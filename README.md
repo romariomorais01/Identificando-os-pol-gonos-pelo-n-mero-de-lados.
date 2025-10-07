@@ -1,42 +1,19 @@
-"# Identificando-os-pol-gonos-pelo-n-mero-de-lados." 
+# 🧮 Calculadora de Polígonos
 
+Projeto desenvolvido em Python que identifica o nome de um polígono a partir do número de lados informado pelo usuário. (de 3 a 20 lados - incialmente)
 
-"# Identificando-os-pol-gonos-pelo-n-mero-de-lados." 
-def nome_poligono(lados):
-    nomes = {
-        3: "Triângulo",
-        4: "Quadrado ou Quadrilátero",
-        5: "Pentágono",
-        6: "Hexágono",
-        7: "Heptágono",
-        8: "Octógono",
-        9: "Eneágono (ou Nonágono)",
-        10: "Decágono",
-        11: "Hendecágono",
-        12: "Dodecágono",
-        13: "Tridecágono",
-        14: "Tetradecágono",
-        15: "Pentadecágono",
-        16: "hexadecágono",
-        17: "Heptadecágono",
-        18: "Octodecágono",
-        19:"Eneadecágono",
-        20: "Icoságono"
-    }
-    if lados < 3:
-        return "Não é um polígono (precisa ter pelo menos 3 lados)."
-    elif lados in nomes:
-        return nomes[lados]
-    else:
-        return f"Polígono de {lados} lados."
+---
 
-# Programa principal
-while True:
-    try:
-        n = int(input("Digite o número de lados do polígono (0 para sair): "))
-        if n == 0:
-            print("Encerrando...")
-            break
-        print("→", nome_poligono(n))
-    except ValueError:
-        print("Por favor, digite um número válido.")
+## 📘 Sobre o Projeto
+
+Este projeto foi criado com o objetivo de praticar lógica de programação, estruturas condicionais e tratamento de erros em Python.  
+Ao digitar o número de lados, o programa retorna automaticamente o nome correspondente ao polígono — de triângulo a icoságono (20 lados).
+
+Além disso, o programa foi estruturado para validar entradas inválidas (como letras, números negativos ou menores que 3).
+
+---
+
+## ⚙️ Funcionalidades
+
+- ✅ Identifica polígonos de 3 a 20 lados  
+- ⚠️ Retorna mensagem de aviso para valores menores
